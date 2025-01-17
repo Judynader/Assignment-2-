@@ -1,0 +1,46 @@
+Jan-17 16:49:56.919 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf --inputFile data.fasta --cutoff 0.6 -with-dag dag.png
+Jan-17 16:49:56.972 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.10.0
+Jan-17 16:49:56.985 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/judynader/.nextflow/plugins; core-plugins: nf-amazon@2.9.0,nf-azure@1.10.1,nf-cloudcache@0.4.2,nf-codecommit@0.2.2,nf-console@1.1.4,nf-google@1.15.2,nf-tower@1.9.3,nf-wave@1.7.2
+Jan-17 16:49:57.007 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jan-17 16:49:57.007 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jan-17 16:49:57.009 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Jan-17 16:49:57.016 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jan-17 16:49:57.027 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/judynader/fasta/nextflow.config
+Jan-17 16:49:57.029 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/judynader/fasta/nextflow.config
+Jan-17 16:49:57.044 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/judynader/.nextflow/secrets/store.json
+Jan-17 16:49:57.046 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@60baef24] - activable => nextflow.secret.LocalSecretsProvider@60baef24
+Jan-17 16:49:57.051 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Jan-17 16:49:57.266 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Jan-17 16:49:57.273 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [condescending_leibniz] DSL2 - revision: 7f5ffd2e8d
+Jan-17 16:49:57.274 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jan-17 16:49:57.274 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jan-17 16:49:57.298 [main] DEBUG nextflow.Session - Session UUID: ab747e2b-adb5-4be6-ba85-6f0971cc5bb5
+Jan-17 16:49:57.298 [main] DEBUG nextflow.Session - Run name: condescending_leibniz
+Jan-17 16:49:57.298 [main] DEBUG nextflow.Session - Executor pool size: 8
+Jan-17 16:49:57.302 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jan-17 16:49:57.305 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Jan-17 16:49:57.318 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.10.0 build 5928
+  Created: 27-10-2024 18:36 UTC (19:36 CEST)
+  System: Mac OS X 15.2
+  Runtime: Groovy 4.0.23 on OpenJDK 64-Bit Server VM 23.0.1
+  Encoding: UTF-8 (UTF-8)
+  Process: 18993@Judys-MacBook-Air.local [127.0.0.1]
+  CPUs: 8 - Mem: 16 GB (152.6 MB) - Swap: 0 (0)
+Jan-17 16:49:57.324 [main] DEBUG nextflow.Session - Work-dir: /Users/judynader/fasta/work [Mac OS X]
+Jan-17 16:49:57.324 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/judynader/fasta/bin
+Jan-17 16:49:57.330 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jan-17 16:49:57.334 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jan-17 16:49:57.347 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jan-17 16:49:57.352 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+Jan-17 16:49:57.378 [main] DEBUG nextflow.Session - Session start
+Jan-17 16:49:57.382 [main] DEBUG nextflow.cli.Launcher - Operation aborted
+nextflow.exception.AbortOperationException: DAG file already exists: /Users/judynader/fasta/dag.png -- enable `dag.overwrite` in your config file to overwrite existing DAG files
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.trace.GraphObserver.onFlowCreate(GraphObserver.groovy:76)
+	at nextflow.Session.notifyFlowCreate(Session.groovy:1123)
+	at nextflow.Session.start(Session.groovy:566)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:132)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:376)
+	at nextflow.cli.Launcher.run(Launcher.groovy:503)
+	at nextflow.cli.Launcher.main(Launcher.groovy:658)
