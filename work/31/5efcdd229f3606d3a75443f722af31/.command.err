@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/judynader/fasta/work/31/5efcdd229f3606d3a75443f722af31/.command.sh", line 6, in <module>
+    with open('bacterial_dna.fasta', 'r') as infile, open('output.txt', 'w') as outfile:
+FileNotFoundError: [Errno 2] No such file or directory: 'bacterial_dna.fasta'
