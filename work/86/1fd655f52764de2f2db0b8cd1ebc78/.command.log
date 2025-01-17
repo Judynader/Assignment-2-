@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "/Users/judynader/fasta/work/86/1fd655f52764de2f2db0b8cd1ebc78/.command.sh", line 5, in <module>
-    with open('data.fasta', 'r') as infile, open('output.txt', 'w') as outfile:
-FileNotFoundError: [Errno 2] No such file or directory: 'data.fasta'
