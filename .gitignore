@@ -1,0 +1,11 @@
+# Ignore Nextflow work directory
+work/
+
+# Ignore Nextflow cache
+.nextflow/cache/
+
+# Ignore Nextflow logs
+.nextflow.log*
+
+# Ignore history file
+.nextflow/history
