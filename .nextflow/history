@@ -25,3 +25,8 @@
 2025-01-17 17:51:20	1.5s	sleepy_sammet	ERR	7f5ffd2e8ddefaf0c3e5733de47a31f6	50fab3d6-52ba-4171-b019-d5f5d4e177b7	nextflow run main.nf --inputFile data.fasta --cutoff 0.6 -with-docker
 2025-01-17 17:52:11	2.3s	angry_boltzmann	ERR	7f5ffd2e8ddefaf0c3e5733de47a31f6	e4688018-3113-4933-9d18-fb4bac6a0723	nextflow run main.nf --inputFile data.fasta --cutoff 0.6 -with-docker
 2025-01-17 17:53:31	1.6s	crazy_tesla	OK	7f5ffd2e8ddefaf0c3e5733de47a31f6	5b4a0b59-d892-4598-b419-8357e0aa2a09	nextflow run main.nf --inputFile data.fasta --cutoff 0.6 -with-docker
+2025-01-17 18:04:35	2.5s	stupefied_celsius	ERR	7f5ffd2e8ddefaf0c3e5733de47a31f6	a6651e8f-8eb2-423d-8564-de6e68c3385a	nextflow run main.nf --inputFile bacterial_dna.fasta --cutoff 0.6 -with-docker
+2025-01-17 18:09:00	1.3s	pedantic_golick	ERR	7f5ffd2e8ddefaf0c3e5733de47a31f6	aeab540d-d240-4a1c-91ff-7609f1c37529	nextflow run main.nf --inputFile /path/to/bacterial_dna.fasta --cutoff 0.6 -with-docker
+2025-01-17 18:09:33	1s	evil_heisenberg	ERR	7f5ffd2e8ddefaf0c3e5733de47a31f6	d0940490-3b27-4788-8b4e-47f0f76193e4	nextflow run main.nf --inputFile bacterial_dna.fasta --cutoff 0.6 -with-docker
+2025-01-17 18:11:44	1.7s	drunk_lumiere	OK	7f5ffd2e8ddefaf0c3e5733de47a31f6	fe75e4e7-ae28-42ba-825e-2034ee71ab29	nextflow run main.nf --inputFile /Users/judynader/Desktop/nextflow-countseq/data/bacterial_dna.fasta --cutoff 0.6 -with-docker
+2025-01-17 18:13:46	-	golden_hamilton	-	7f5ffd2e8ddefaf0c3e5733de47a31f6	483e7d92-4f1d-4304-afbc-03073a90f724	nextflow run main.nf --inputFile /Users/judynader/Desktop/nextflow-countseq/data/bacterial_dna.fasta --cutoff 0.6 -with-docker -with-dag dag.png
